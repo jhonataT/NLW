@@ -1,0 +1,84 @@
+:root {
+    /* Variáveis CSS*/
+    --color-background: #f8f8fcee; 
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #44268a;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    
+    /* Tamanho da fonte padrão: 16 px - 100% - 1rem */
+    font-size: 60%; /* controle das medidas rem */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh; /* Viewport Height ( height => Altura)*/
+}
+
+body {
+    background: var(--color-background);
+    display: flex; /* mudar o fluxo padrão do html, colocando um ao lado do outro*/
+    align-items: center; /*só funciona com display flex ou display grid*/
+    justify-content: center; /*só funciona com display flex ou display grid*/
+
+}
+
+body,
+input, 
+button, 
+textarea {
+    /* font: 500 1.6rem Poppins;  Poderia ser trocado por:*/
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 90vw; /* Largura*/
+    max-width: 700px; /* Largura máaxima de 700px */
+    /* border: 1px solid red; */
+} 
+
+@media (min-width: 700px) { /* Aumentar a fonte em telas maiores que 700px*/
+    :root {
+        font-size: 62.5%; /* Todo 1rem vai ser relativo a 10px (16 => 100%) */
+    }
+
+}
+
+
+/* #container { 
+    /* Definição de box-model (não precisa ser dentro de um container): */
+    /*border: 1px solid red; /* borda */
+    /* padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px; */
+    /* padding: 10px 40px 100px;  --> Maneira mais compacta preenchimento (cima, direita, baixo, esquerda) */
+    /*padding: 40px;
+    margin: 60px;
+
+    width: 300px;
+    height: 300px;
+}  */
